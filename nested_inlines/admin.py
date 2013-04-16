@@ -1,8 +1,9 @@
 from django.contrib.admin.options import (ModelAdmin, InlineModelAdmin,
-    csrf_protect_m, models, transaction, all_valid, force_unicode,
-    PermissionDenied, unquote, escape, Http404, reverse)
+    csrf_protect_m, models, transaction, all_valid, PermissionDenied,
+    unquote, escape, Http404, reverse)
 from django.contrib.admin.helpers import InlineAdminFormSet, AdminForm
 from django.utils.translation import ugettext as _
+from django.utils.encoding import force_unicode
 
 from forms import BaseNestedModelForm, BaseNestedInlineFormSet
 from helpers import AdminErrorList
